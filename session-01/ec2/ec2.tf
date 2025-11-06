@@ -1,12 +1,8 @@
-terraform {
-  required_providers {
-    aws = {
-      source = "hashicorp/aws"
-      version = "6.19.0"
-    }
-  }
-}
+resource "aws_instance" "example" {
+  ami           = ami-0b4f379183e5706b9 #Centos-8-DevOps-Practice-AMI
+  instance_type = "t3.micro"
 
-provider "aws" {
-  # Configuration options
+  tags = {
+    Name = "HelloWorld"
+  }
 }
