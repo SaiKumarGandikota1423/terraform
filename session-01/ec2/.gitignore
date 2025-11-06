@@ -3,6 +3,11 @@
 #.terraform/
 #.terraform/*
 
+.terraform/
+.terraform/*
+.terraform/
+.terraform/*
+
 # Local .terraform directories
 **/.terraform/*
 
