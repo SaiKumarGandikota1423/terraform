@@ -9,6 +9,6 @@
 
   provider "aws" {
       # Configuration options
-      ## Configure the AWS Provider 
+      # Configure the AWS Provider 
     region = "us-east-1"
   }
