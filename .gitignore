@@ -29,3 +29,29 @@ override.tf.json
 
 # === Important: Keep the lock file tracked ===
 !*.terraform.lock.hcl
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+terraform.tfvars
+terraform.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+*.terraform.tfstate.lock.info
+
+# Keep lock file tracked
+!*.terraform.lock.hcl
+
+# OS/Editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+*.pem
