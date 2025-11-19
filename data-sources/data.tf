@@ -19,12 +19,12 @@ data "aws_ami" "centos8"{
 }
 
 data "aws_ami" "aws-linux-2"{
-    owners  =   ["137112412989"]
+    owners  =   ["amazon"]
     most_recent = true
 
         filter {
         name      = "name"
-        values    =  ["al2023-ami-2023.9.20251117.1-kernel-6.1-x86_64"]
+        values    =  ["al2023-ami-2023.9.20251117.1-kernel-*"]
         }
 
         filter {
