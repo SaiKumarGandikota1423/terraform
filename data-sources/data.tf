@@ -13,7 +13,27 @@ data "aws_ami" "centos8"{
         }
 
         filter {
-        name      = "virtualisation-type"
+        name      = "virtualization-type"
+        values    =  ["hvm"]
+        }
+}
+
+data "aws_ami" "aws-linux-2"{
+    owners  =   ["137112412989"]
+    most_recent = true
+
+        filter {
+        name      = "name"
+        values    =  ["al2023-ami-2023.9.20251117.1-kernel-6.1-x86_64"]
+        }
+
+        filter {
+        name      = "root-device-type"
+        values    =  ["ebs"]
+        }
+
+        filter {
+        name      = "virtualization-type"
         values    =  ["hvm"]
         }
 }
